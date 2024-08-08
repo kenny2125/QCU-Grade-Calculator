@@ -6,7 +6,9 @@ body {
   overflow: hidden;
   background-color: black;
   font-family: 'Open Sans', sans-serif; /* Apply Open Sans font */
+  
 }
+
 
 body::before {
   content: "";
@@ -19,6 +21,7 @@ body::before {
   background-size: cover;
   opacity: 0.2;
   z-index: 2;
+  filter: blur(4px);
 }
 
 body::after {
@@ -32,22 +35,17 @@ body::after {
   z-index: 1;
 }
 
-.content {
-  position: relative;
-  z-index: 3;
-  color: white;
-  padding: 1em;
-  text-align: center;
-}
-
 /* Top Menu */
 .top-menu {
-  position: absolute;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  float: left;
   top: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  justify-content: right;
+  
+  justify-content: left;
   align-items: left;
   
   color: white;
@@ -55,13 +53,5 @@ body::after {
   z-index: 4;
 }
 
-.top-menu a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5em 1em;
-  transition: background 0.3s;
-}
 
-.top-menu a:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
+
