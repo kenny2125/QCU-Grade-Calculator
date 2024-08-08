@@ -1,57 +1,15 @@
 body {
-  margin: 0;
-  padding: 100;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background-color: black;
   font-family: 'Open Sans', sans-serif; /* Apply Open Sans font */
-  
-}
-
-
-body::before {
-  content: "";
   position: absolute;
-  top: 0;
+  top: 1000;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("IMG_7211.JPG") no-repeat center center;
-  background-size: cover;
-  opacity: 0.2;
-  z-index: 2;
-  filter: blur(4px);
+  background: url("/Assets/photos/IMG_7211.JPG") center center;
+  
 }
 
-body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at left, #363731, #1F1F1F);
-  z-index: 1;
-}
 
-/* Top Menu */
-.top-menu {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  float: left;
-  top: 0;
-  left: 0;
-  width: 100%;
-  
-  justify-content: left;
-  align-items: left;
-  
-  color: white;
-  padding: 1em 0;
-  z-index: 4;
-}
 
 
 

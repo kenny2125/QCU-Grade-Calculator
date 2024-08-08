@@ -1,58 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
-    margin: 0;
-    padding: 100;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    background-color: black;
-    font-family: 'Open Sans', sans-serif; /* Apply Open Sans font */
-    
-  }
-  
-  
-  body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("IMG_7211.JPG") no-repeat center center;
+    min-height: 100vh;
+    background: rgba(0,0,0,0.7)url(/Assets/photos/IMG_7202.JPG) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
-    opacity: 0.2;
-    z-index: 2;
-    filter: blur(4px);
+    background-blend-mode: darken;
+  }
+
+  *{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
   }
   
-  body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at left, #363731, #1F1F1F);
-    z-index: 1;
-  }
-  
-  /* Top Menu */
-  .top-menu {
+
+  .header{
     display: flex;
-    flex-direction: row;
-    position: relative;
-    float: left;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
     top: 0;
     left: 0;
-    width: 100%;
-    
-    justify-content: left;
-    align-items: left;
-    
-    color: white;
-    padding: 1em 0;
-    z-index: 4;
+    padding: 35px 100px;
+    position: fixed;
+
   }
-  
-  
-  
+
+  .titlecontainer {
+    position: relative;
+    top: 87px;
+    width: 931px;
+    left: 15%;
+    font-weight: 700;
+   
+  }
+  .title {
+    color: rgba(232, 252, 217, 1);
+    font-size: 92px;
+    font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  }
+
+   a{
+    text-decoration: none;
+    color: white;
+   
+  }
+  .biotitle {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+
+  nav a{
+    margin-left: 60px;
+  }
   
