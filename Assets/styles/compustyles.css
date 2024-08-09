@@ -32,11 +32,13 @@ body {
 
   }
 
+
+
   .titlecontainer {
     position: relative;
-    top: 87px;
+    top: 107px;
     width: 931px;
-    left: 15%;
+    left: 23%;
     font-weight: 700;
    
   }
@@ -44,9 +46,9 @@ body {
     color: rgba(232, 252, 217, 1);
     font-size: 92px;
     font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
   }
 
    a{
@@ -63,4 +65,80 @@ body {
   nav a{
     margin-left: 60px;
   }
+  
+  .navigation {
+    border-radius: 10px;
+    background-color: #707070;
+    color: white;
+    box-shadow: none;    
+  }
+
+  .primary {
+    margin-left: -80px;
+  }
+
+  .navigation p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+
+  .first {
+    width: 100%;
+    color: #ffffff;
+    height: 10%;
+    
+  }
+  .grade {
+    
+    margin-left: -120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+  }
+  .Ttitle {
+    font-size: 32px;
+  }
+  
+  .tablecontainer {
+    border-radius: 15px;
+    
+    width:861px;
+    height: 150px;
+    top: 150px;
+    left: 48%;
+    height: 444px;
+    background-color: #626262;
+    position: relative;
+
+  }
+
+  .buttons button {
+    font-size: 14px;
+    font-weight: 0px;
+    
+
+  }
+  
+  .second {
+    left: 2.5%;
+    
+    width: 95%;
+    color: #ffffff;
+    
+    display: flex;
+    background: #707070;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 80%;
+    border-radius: 10px;
+    position: relative;
+  }
+  .second p {
+    margin: 19px;
+    
+  }
+
   
