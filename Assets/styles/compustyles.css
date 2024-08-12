@@ -124,20 +124,79 @@ body {
   
   .second {
     left: 2.5%;
-    
     width: 95%;
     color: #ffffff;
-    
+    background-color: #707070;
     display: flex;
-    background: #707070;
     justify-content: space-between;
     margin-bottom: 20px;
-    height: 80%;
-    border-radius: 10px;
+    height: 10%;
+    border-radius: 10px 10px 0 0;
     position: relative;
   }
   .second p {
     margin: 19px;
+    
+  }
+
+  
+
+  .Subjectname {
+    margin-left: 42px;
+    margin-right: 24px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  
+ 
+  .Subjectnameone {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 19px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: greenyellow;
+    text-decoration: underline;
+  }
+
+
+  .tablegrade{
+    margin-top: -21px;
+    width: 95%;
+    margin-left: 21px;
+    background-color: #939393;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    margin-bottom: 24px;
+  }
+
+  .tablegrade button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: #8d8b8b;
+    color: white;
+  }
+
+  .button1 {
+    margin-left: 10px;
+  }
+  .button2{
+    
+    margin-right: 10px;
+    padding-top: -10px;
+    padding-bottom: -3px; 
+  }
+
+  .plusmin {
+    display: flex;
     
   }
 
