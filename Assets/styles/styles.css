@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;  
+}
+
 body {
     min-height: 100vh;
     background: rgba(0,0,0,0.7)url(/Assets/photos/IMG_7211.JPG) no-repeat;
@@ -8,16 +16,6 @@ body {
     background-size: cover;
     background-blend-mode: darken;
   }
-
-  *{
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    
-  }
-  
 
   .header{
     display: flex;
@@ -29,13 +27,15 @@ body {
     left: 0;
     padding: 35px 100px;
     position: fixed;
-
+  }
+  nav a{
+    margin-left: 60px;
   }
 
-
-.selectionTitle{
-  
-}
+  a{
+    text-decoration: none;
+    color: white;
+  }
 
   .titleContainer {
     position: relative;
@@ -43,8 +43,9 @@ body {
     width: 950px;
     left: 5%;
     font-weight: 700;
-   
   }
+
+
   .title {
     color: rgba(232, 252, 217, 1);
     font-size: 92px;
@@ -53,103 +54,58 @@ body {
     font-weight: 700;
     font-style: normal;
   }
-
-   a{
-    text-decoration: none;
-    color: white;
-   
-  }
+  
   .biotitle {
     text-align: center;
     color: #FFFFFF;
     font-size: 14px;
   }
 
-  .biott{
+.selectionContainer{
+  position: relative;
+  top: 260px;
+  width: 700px;
+  left: 60%;
+  font-weight: 700;
+  font-size: 3vh;
+  color: #FFFFFF;
+}
+
+.selectionCalculate {
+  border-radius: 10px;
+  background-color: #707070;
+  color: white;
+  box-shadow: none;     
+}
+
+.selectionTitle{
+  color: rgba(232, 252, 217, 1);
+}
+
+.selectionCalculate p {  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+  .explanationContainer {
     position: relative;
-    
-    width: 900px;
-    
-    font-weight: 700;
-  }
-
-  nav a{
-    margin-left: 60px;
+    top: 500px;
+    width: 950px;
+    left: 5%;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
   }
   
-  .navigation {
-    border-radius: 10px;
-    background-color: #707070;
-    color: white;
-    box-shadow: none;    
-  }
-
-  .primary {
-    margin-left: -80px;
-  }
-
-  .navigation p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  
-
-  .first {
-    width: 100%;
-    color: #ffffff;
-    height: 10%;
-    
-  }
-  .grade {
-    
-    margin-left: -120px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-  }
-  .Ttitle {
-    font-size: 32px;
-  }
-  
-  .tablecontainer {
-    border-radius: 15px;
-    
-    width:861px;
-    height: 150px;
-    top: 150px;
-    left: 48%;
-    height: 444px;
-    background-color: #626262;
+  .explanationContainer p{
     position: relative;
-
-  }
-
-  .buttons button {
+    top: 0;
+    width: 950px;
+    font-weight: 50;
     font-size: 14px;
-    font-weight: 0px;
-    
-
-  }
-  
-  .second {
-    left: 2.5%;
-    
-    width: 95%;
-    color: #ffffff;
-    
-    display: flex;
-    background: #707070;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    height: 80%;
-    border-radius: 10px;
-    position: relative;
-  }
-  .second p {
-    margin: 19px;
-    
+    color: #FFFFFF;
   }
 
   
