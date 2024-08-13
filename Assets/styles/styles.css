@@ -1,15 +1,111 @@
-body {
-  font-family: 'Open Sans', sans-serif; /* Apply Open Sans font */
-  position: absolute;
-  top: 1000;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("/Assets/photos/IMG_7211.JPG") center center;
-  
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;  
 }
 
+body {
+    min-height: 100vh;
+    background: rgba(0,0,0,0.7)url(/Assets/photos/IMG_7211.JPG) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    padding: 35px 100px;
+    position: fixed;
+  }
+  nav a{
+    margin-left: 60px;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .titleContainer {
+    position: relative;
+    top: 350px;
+    width: 950px;
+    left: 5%;
+    font-weight: 700;
+  }
 
 
+  .title {
+    color: rgba(232, 252, 217, 1);
+    font-size: 92px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .biotitle {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+  }
 
+.selectionContainer{
+  position: relative;
+  top: 260px;
+  width: 700px;
+  left: 60%;
+  font-weight: 700;
+  font-size: 3vh;
+  color: #FFFFFF;
+}
 
+.selectionCalculate {
+  border-radius: 10px;
+  background-color: #707070;
+  color: white;
+  box-shadow: none;     
+}
+
+.selectionTitle{
+  color: rgba(232, 252, 217, 1);
+}
+
+.selectionCalculate p {  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+  .explanationContainer {
+    position: relative;
+    top: 500px;
+    width: 950px;
+    left: 5%;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+  
+  .explanationContainer p{
+    position: relative;
+    top: 0;
+    width: 950px;
+    font-weight: 50;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+
+  
