@@ -32,13 +32,11 @@ body {
 
   }
 
-
-
   .titlecontainer {
     position: relative;
-    top: 107px;
+    top: 87px;
     width: 931px;
-    left: 23%;
+    left: 15%;
     font-weight: 700;
    
   }
@@ -46,9 +44,9 @@ body {
     color: rgba(232, 252, 217, 1);
     font-size: 92px;
     font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   }
 
    a{
@@ -65,140 +63,4 @@ body {
   nav a{
     margin-left: 60px;
   }
-  
-  .navigation {
-    border-radius: 10px;
-    background-color: #707070;
-    color: white;
-    box-shadow: none;    
-  }
-
-  .primary {
-    margin-left: -80px;
-  }
-
-  .navigation p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  
-
-  .first {
-    width: 100%;
-    color: #ffffff;
-    height: 10%;
-    
-  }
-  .grade {
-    
-    margin-left: -120px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-  }
-  .Ttitle {
-    font-size: 32px;
-  }
-  
-  .tablecontainer {
-    border-radius: 15px;
-    
-    width:861px;
-    height: 150px;
-    top: 150px;
-    left: 48%;
-    height: 444px;
-    background-color: #626262;
-    position: relative;
-
-  }
-
-  .buttons button {
-    font-size: 14px;
-    font-weight: 0px;
-    
-
-  }
-  
-  .second {
-    left: 2.5%;
-    width: 95%;
-    color: #ffffff;
-    background-color: #707070;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    height: 10%;
-    border-radius: 10px 10px 0 0;
-    position: relative;
-  }
-  .second p {
-    margin: 19px;
-    
-  }
-
-  
-
-  .Subjectname {
-    margin-left: 42px;
-    margin-right: 24px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-  }
-  
- 
-  .Subjectnameone, .Subjectnameone2, .Subjectnameone3, .Subjectnameone4, .Subjectnameone5, .Subjectnameone6, .Subjectnameone7, .Subjectnameone8 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 19px;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: greenyellow;
-    text-decoration: underline;
-  }
-
-
-  .tablegrade{
-    margin-top: -21px;
-    width: 95%;
-    margin-left: 21px;
-    background-color: #939393;
-    border-radius: 5px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    height: 35px;
-    margin-bottom: 24px;
-  }
-
-  .tablegrade button {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 2px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    border-radius: 50%;
-    font-size: 18px;
-    background-color: #8d8b8b;
-    color: white;
-  }
-
-  .button1, .buttton3, .buttton5, .buttton7, .buttton9, .buttton11, .buttton13, .buttton15 {
-    margin-left: 20px;
-  }
-  .button2, .buttton4, .buttton6, .buttton8, .buttton10, .buttton12, .buttton14, .buttton16{
-    
-    
-    padding-top: -10px;
-    padding-bottom: -3px; 
-  }
-
-  .plusmin {
-    display: flex;
-   
-    
-  }
-
   
