@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next and Previous Button Example</title>
+</head>
+<body>
+
+    <button class="navButton prevButton">Previous</button>
+    <button class="navButton nextButton">Next</button>
+    <p class="displayText">1.00</p>
+
+    <script>
+        let values = [1.00, 1.25, 1.50, 1.75, 2.00];
+        let currentIndex = 0;
+
+        const displayText = document.querySelector('.displayText');
+
+        document.querySelector('.nextButton').addEventListener("click", function() {
+            if (currentIndex < values.length - 1) {
+                currentIndex++;
+            }
+            displayText.textContent = values[currentIndex].toFixed(2);
+        });
+
+        document.querySelector('.prevButton').addEventListener("click", function() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            }
+            displayText.textContent = values[currentIndex].toFixed(2);
+        });
+    </script>
+
+</body>
+</html>
