@@ -3,44 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next and Previous Button Example</title>
+    <title>Calculate GWA</title>
 </head>
 <body>
 
-    <button class="navButton prevButton">Previous</button>
-    <button class="navButton nextButton">Next</button>
-    <p class="displayText">1.00</p>
-    <p>Multiplied by 5: <span class="multipliedValue">5.00</span></p>
+    <div>
+        <label>Grade 1: <input type="number" class="gradeInput" step="0.01" min="0" max="5"></label><br>
+        <label>Grade 2: <input type="number" class="gradeInput" step="0.01" min="0" max="5"></label><br>
+        <label>Grade 3: <input type="number" class="gradeInput" step="0.01" min="0" max="5"></label><br>
+        <label>Grade 4: <input type="number" class="gradeInput" step="0.01" min="0" max="5"></label><br>
+        <label>Grade 5: <input type="number" class="gradeInput" step="0.01" min="0" max="5"></label><br>
+        <label>Grade 6: <input type="number" class="gradeInput" step="0.01" min="0" max="5"></label><br>
+        <label>Grade 7: <input type="number" class="gradeInput" step="0.01" min="0" max="5"></label><br>
+        <label>Grade 8: <input type="number" class="gradeInput" step="0.01" min="0" max="5"></label><br>
+    </div>
+
+    <p>GWA: <span id="gwaResult">0.00</span></p>
 
     <script>
-        let values = [1.00, 1.25, 1.50, 1.75, 2.00];
-        let currentIndex = 0;
+        const inputs = document.querySelectorAll('.gradeInput');
+        const gwaResult = document.getElementById('gwaResult');
+        const unit = 3;
+        const totalUnits = unit * inputs.length;
 
-        const displayText = document.querySelector('.displayText');
-        const multipliedValue = document.querySelector('.multipliedValue');
+        function calculateGWA() {
+            let totalGradePoints = 0;
+            let validGrades = 0;
 
-        function updateDisplay() {
-            const currentValue = values[currentIndex];
-            displayText.textContent = currentValue.toFixed(2);
-            multipliedValue.textContent = (currentValue * 5).toFixed(2);
+            inputs.forEach(input => {
+                const grade = parseFloat(input.value);
+                if (!isNaN(grade)) { // Check if the input is a valid number
+                    totalGradePoints += grade * unit;
+                    validGrades++;
+                }
+            });
+
+            if (validGrades > 0) {
+                const gwa = totalGradePoints / totalUnits;
+                gwaResult.textContent = gwa.toFixed(2);
+            } else {
+                gwaResult.textContent = "0.00"; // Default value if no valid grades are entered
+            }
         }
 
-        document.querySelector('.nextButton').addEventListener("click", function() {
-            if (currentIndex < values.length - 1) {
-                currentIndex++;
-            }
-            updateDisplay();
+        // Add event listeners to each input field to calculate the GWA whenever a value changes
+        inputs.forEach(input => {
+            input.addEventListener('input', calculateGWA);
         });
 
-        document.querySelector('.prevButton').addEventListener("click", function() {
-            if (currentIndex > 0) {
-                currentIndex--;
-            }
-            updateDisplay();
-        });
-
-        // Initialize display with the first value
-        updateDisplay();
+        // Initial calculation in case there are pre-filled values
+        calculateGWA();
     </script>
 
 </body>

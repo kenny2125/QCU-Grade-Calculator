@@ -1,18 +1,3 @@
-var sub1 = Subjectnameone * 3;
-var sub2 = Subjectnameone2 * 3;
-var sub3 = Subjectnameone3 * 3;
-var sub4 = Subjectnameone4 * 3;
-var sub5 = Subjectnameone5 * 3;
-var sub6 = Subjectnameone6 * 3;
-var sub7 = Subjectnameone7 * 2;
-var sub8 = Subjectnameone8 * 3;
-var gwa = (sub1 + sub2 + sub3 + sub4 + sub5 + sub6 + sub7 + sub8) / 20;
-
-const result = document.querySelector(".gwa");
-
-function finalgwa () {
-    result.textContent = gwa.toFixed(2);
-}
 
 let ratings = [1.00, 1.25, 1.50, 1.75, 2.00, 2.25, 2.50, 2.75, 3.00]
 let currentnum = 0;
@@ -234,3 +219,10 @@ document.querySelector(".button15").addEventListener("click", function(){
     }
     Subjectnameone8.textContent = ratings8[currentnum8].toFixed(2);
 })
+
+const gwa = document.querySelectorAll(".ong");
+const resultspan = document.querySelector(".gwa");
+
+function calculate() {
+    
+}
