@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next and Previous Button Example</title>
+</head>
+<body>
+
+    <button class="navButton prevButton">Previous</button>
+    <button class="navButton nextButton">Next</button>
+    <p class="displayText">1.00</p>
+    <p>Multiplied by 5: <span class="multipliedValue">5.00</span></p>
+
+    <script>
+        let values = [1.00, 1.25, 1.50, 1.75, 2.00];
+        let currentIndex = 0;
+
+        const displayText = document.querySelector('.displayText');
+        const multipliedValue = document.querySelector('.multipliedValue');
+
+        function updateDisplay() {
+            const currentValue = values[currentIndex];
+            displayText.textContent = currentValue.toFixed(2);
+            multipliedValue.textContent = (currentValue * 5).toFixed(2);
+        }
+
+        document.querySelector('.nextButton').addEventListener("click", function() {
+            if (currentIndex < values.length - 1) {
+                currentIndex++;
+            }
+            updateDisplay();
+        });
+
+        document.querySelector('.prevButton').addEventListener("click", function() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            }
+            updateDisplay();
+        });
+
+        // Initialize display with the first value
+        updateDisplay();
+    </script>
+
+</body>
+</html>
