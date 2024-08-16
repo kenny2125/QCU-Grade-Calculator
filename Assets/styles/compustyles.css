@@ -149,7 +149,7 @@ body {
   }
   
  
-  .Subjectnameone, .Subjectnameone2, .Subjectnameone3, .Subjectnameone4, .Subjectnameone5, .Subjectnameone6, .Subjectnameone7, .Subjectnameone8 {
+  .Subjectnameone {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 19px;
@@ -185,10 +185,10 @@ body {
     color: white;
   }
 
-  .button1, .buttton3, .buttton5, .buttton7, .buttton9, .buttton11, .buttton13, .buttton15 {
+  .button1 {
     margin-left: 20px;
   }
-  .button2, .buttton4, .buttton6, .buttton8, .buttton10, .buttton12, .buttton14, .buttton16{
+  .button2{
     
     
     padding-top: -10px;
