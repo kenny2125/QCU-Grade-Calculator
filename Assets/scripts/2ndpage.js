@@ -56,19 +56,18 @@ subjects.forEach(subject => {
 
     
 
-    function qualif (calcgwa, lowestgwa) {
-        if(calcgwa <= 1.25 && calcgwa >=1.00 && lowestgwa <= 1.75) {
+    function qualif(calcgwa, lowestgwa) {
+        if (calcgwa <= 1.25 && lowestgwa <= 1.75) {
             quali.textContent = "Suma Cum Laude";
-    }    else if((calcgwa <= 1.25 && lowestgwa <= 2.00) || (calcgwa <= 1.50 && calcgwa > 1.25 && lowestgwa >= 2.00)) {
-        quali.textContent = "Magna Cum Laude";
-    }    else if ((calcgwa <= 1.50 && lowestgwa <=2.25) || (calcgwa <= 1.75 && calcgwa > 1.50 && lowestgwa >= 2.25)) {
-        quali.textContent = "Cum Laude";
-    } else {
-        quali.textContent = "No Qualification";
-        audio.play();
+        } else if (calcgwa <= 1.50 && lowestgwa <= 2.00) {
+            quali.textContent = "Magna Cum Laude";
+        } else if (calcgwa <= 1.75 && lowestgwa <= 2.25) {
+            quali.textContent = "Cum Laude";
+        } else {
+            quali.textContent = "No Qualification";
+        }
     }
-    }
-                    calcu();
+    calcu();
 
 
     
