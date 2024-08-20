@@ -10,7 +10,7 @@ body {
   }
 
   *{
-    
+    user-select: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -149,7 +149,7 @@ body {
   }
   
  
-  .Subjectnameone, .Subjectnameone2, .Subjectnameone3, .Subjectnameone4, .Subjectnameone5, .Subjectnameone6, .Subjectnameone7, .Subjectnameone8 {
+  .Subjectnameone {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 19px;
@@ -185,10 +185,10 @@ body {
     color: white;
   }
 
-  .button1, .buttton3, .buttton5, .buttton7, .buttton9, .buttton11, .buttton13, .buttton15 {
+  .button1 {
     margin-left: 20px;
   }
-  .button2, .buttton4, .buttton6, .buttton8, .buttton10, .buttton12, .buttton14, .buttton16{
+  .button2{
     
     
     padding-top: -10px;
@@ -201,4 +201,63 @@ body {
     
   }
 
-  
+  .strand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 626px;
+    top: -294px;
+    left: 188px;
+    height: 54px;
+    color: #E8FCD9;
+    font-size: 24px;
+    font-weight:bold;
+    background-color: #626262;
+    border-radius: 10px;
+  }
+
+  .results {
+    height: 240px;
+    width: 626px;
+    position: relative;
+    left: 186px;
+    top: -290px;
+    background-color: #626262;
+    border-radius: 10px;
+  }
+
+  .gwac {
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .gwa {
+    font-size: 65px;
+    margin-top: -4px;
+  }
+
+
+  .quali {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .honor {
+      font-size: 45px;
+      margin-top: -2px;
+  }
+
+  .gwac, .quali {
+    padding-left: 30px;
+  }
