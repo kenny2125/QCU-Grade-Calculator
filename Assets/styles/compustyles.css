@@ -6,6 +6,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    overflow: hidden;
     background-blend-mode: darken;
   }
 
@@ -15,6 +16,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    
     
   }
   
@@ -261,3 +263,20 @@ body {
   .gwac, .quali {
     padding-left: 30px;
   }
+
+  .slide {
+    border: 1px solid red;
+  }
+
+
+ .firstsecond {
+  left: 48%;
+  top: -588px;
+  z-index: 0;
+ }
+
+ .secondfirst {
+  z-index: 0;
+  left: 83  8px;
+  top: -1030px;
+ }
