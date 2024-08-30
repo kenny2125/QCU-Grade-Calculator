@@ -277,6 +277,37 @@ body {
 
  .secondfirst {
   z-index: 0;
-  left: 83  8px;
+  left: 828px;
   top: -1030px;
+ }
+
+ .secondsecond {
+  top: -1474px;
+  z-index: 0;
+  left: 828px;
+ }
+
+ .thirdfirst {
+  left: 828px;
+  top:-1920px;
+  
+ }
+
+
+ .thirdsecond {
+  left: 828px;
+  top:-2364px;
+  
+ }
+
+ .fourthfirst {
+  left: 828px;
+  top:-2808px;
+  
+ }
+
+ .fourthsecond {
+  left: 828px;
+  top:-3252px;
+  
  }
