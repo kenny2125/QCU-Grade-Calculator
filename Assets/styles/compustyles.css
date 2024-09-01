@@ -270,8 +270,9 @@ body {
 
 
  .firstsecond {
-  left: 48%;
+  left: 43.2%;
   top: -588px;
+ 
   z-index: 0;
  }
 
@@ -310,4 +311,8 @@ body {
   left: 828px;
   top:-3252px;
   
+ }
+
+ .firstfirst {
+  left: 830px;
  }
