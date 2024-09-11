@@ -2,7 +2,7 @@
 
 body {
     min-height: 100vh;
-    background: rgba(0,0,0,0.7)url(/Assets/photos/IMG_7202.JPG) no-repeat;
+    background: rgba(0,0,0,0.7)url(Assets/photos/IMG_7202.JPG) no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
