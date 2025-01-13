@@ -60,7 +60,7 @@ function GradesTable({ course }) {
   }, [semester.subjects]);
 
   return (
-    <div className="bg-gray-900 p-2 sm:p-4 rounded-lg">
+    <div className="bg-background2 p-2 sm:p-4 rounded-lg">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
         <div className="flex items-center gap-4">
           <h3 className="text-lg sm:text-xl font-bold text-primary">{semester.name}</h3>
@@ -93,7 +93,7 @@ function GradesTable({ course }) {
       <div className="overflow-x-auto">
         <table className="w-full min-w-full">
           <thead>
-            <tr className="text-left text-gray-400 text-sm">
+            <tr className="text-left text-white text-sm">
               <th className="p-1 sm:p-2">Code</th>
               <th className="p-1 sm:p-2">Subject</th>
               <th className="p-1 sm:p-2">Units</th>
@@ -140,8 +140,8 @@ function GradesTable({ course }) {
         </table>
       </div>
 
-      <div className="mt-4 flex flex-col sm:flex-row justify-between items-center gap-2">
-        <span className="text-gray-400 text-sm">
+      <div className="mt-4 flex flex-col sm:flex-row justify-between items-center gap-1">
+        <span className="text-white text-sm">
           Total Units: {semester.subjects.reduce((sum, subj) => sum + subj.units, 0)}
         </span>
       </div>

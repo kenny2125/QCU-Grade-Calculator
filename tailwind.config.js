@@ -8,7 +8,9 @@ export default {
     extend: {
       colors: {
         primary: '#E8FCD9',
-        text: '#000000',
+        buttons: "#707070",
+        background: '#1a1a1a',
+        background2: '#626262'
       },
       fontSize: {
         'title': '96px',

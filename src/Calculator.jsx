@@ -11,7 +11,12 @@ function Calculator({ course, onBack }) {
     bsit: 'Bachelor of Science in Information Technology',
     bsece: 'Bachelor of Science in Electronics Engineering',
     bsie: 'Bachelor of Science in Industrial Engineering',
-    bsee: 'Bachelor of Science in Electrical Engineering'
+    bsee: 'Bachelor of Science in Electrical Engineering',
+    bsa: 'Bachelor of Science in Accountancy',
+    bsentrep: 'Bachelor of Science in Entrepreneurship',
+    bssped: 'Bachelor of Special Needs Education',
+    bsis: 'Bachelor of Science in Information Systems',
+    bscs: 'Bachelor of Science in Computer Science'
   }
 
   const handleRefresh = () => {
@@ -30,22 +35,22 @@ function Calculator({ course, onBack }) {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Left Column Components */}
-        <div className="flex flex-col gap-4 h-full">
+        <div className="flex flex-col gap-4">
           {/* Top Component - Course Title */}
-          <div className="bg-gray-800 p-6 rounded-lg flex-1">
+          <div className="bg-background p-4 rounded-lg text-center">
             <h2 className="text-2xl font-bold text-primary">{courseNames[course]}</h2>
           </div>
           
           {/* Middle Component - GWA Display */}
-          <div className="bg-gray-800 p-6 rounded-lg flex-1 flex flex-col justify-between">
+          <div className="bg-background p-6 rounded-lg flex-1 flex flex-col justify-between">
             <div>
-              <p className="text-gray-400">Your General Weight Average is:</p>
-              <p className="text-4xl font-bold text-primary">{gwa}</p>
+              <p className="text-text">Your General Weight Average is:</p>
+              <p className="text-5xl font-bold text-primary">{gwa}</p>
             </div>
             
             <div>
-              <p className="text-gray-400">You are qualified as:</p>
-              <p className="text-2xl font-bold text-primary">{qualification}</p>
+              <p className="text-text">You are qualified as:</p>
+              <p className="text-5xl font-bold text-primary">{qualification}</p>
             </div>
 
             <button 
@@ -63,7 +68,7 @@ function Calculator({ course, onBack }) {
         </div>
 
         {/* Right Column */}
-        <div className="bg-gray-800 p-6 rounded-lg h-[500px] overflow-y-auto">
+        <div className="bg-background p-6 rounded-lg h-[500px] overflow-y-auto">
           <GradesTable course={course} />
         </div>
       </div>
