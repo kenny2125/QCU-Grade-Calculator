@@ -8,11 +8,11 @@
   html {
     @apply text-white font-rubik;
   }
-  div {
+  /* div {
     outline: 1px solid rgba(255, 0, 0, 0.3);
   }
   button {
-    outline: 1px solid rgba(255, 184, 0, 0.3);
+    outline: 1px solid rgba(255, 184, 0, 0.3);  
   }
   h1, h2 {
     outline: 1px solid rgba(0, 0, 255, 0.3);
@@ -22,7 +22,7 @@
   }
   p {
     outline: 1px solid rgba(128, 0, 128, 0.3);
-  }
+  } */
 }
 
 
