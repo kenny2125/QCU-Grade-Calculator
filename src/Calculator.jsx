@@ -24,6 +24,24 @@ function Calculator({ course, onBack }) {
     setQualification("Not Calculated");
   }
 
+  const handleGwaChange = (newGwa) => {
+    setGwa(newGwa);
+    const g = parseFloat(newGwa);
+    let qual;
+    if (g === 0) {
+      qual = "Not Calculated";
+    } else if (g <= 1.25) {
+      qual = "Summa Cum Laude";
+    } else if (g <= 1.75) {
+      qual = "Magna Cum Laude";
+    } else if (g <= 2.25) {
+      qual = "Cum Laude";
+    } else {
+      qual = "Not Qualified";
+    }
+    setQualification(qual);
+  }
+
   return (
     <div className="flex flex-col gap-8">
       <button 
@@ -69,7 +87,7 @@ function Calculator({ course, onBack }) {
 
         {/* Right Column */}
         <div className="bg-background p-6 rounded-lg h-[500px] overflow-y-auto">
-          <GradesTable course={course} />
+          <GradesTable course={course} onGwaChange={handleGwaChange} />
         </div>
       </div>
     </div>
